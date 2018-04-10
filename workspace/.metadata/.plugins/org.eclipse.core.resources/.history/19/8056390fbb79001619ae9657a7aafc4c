@@ -1,0 +1,20 @@
+package foo;
+
+import java.util.Arrays;
+
+public class ConsoleRunner {
+
+	public static void main(String[] args){
+		Integer[] a = {19, 16, 15, 14, 14, 12, 11, 10, 13, 16};
+		
+		Integer[] b = Arrays.copyOf(a, a.length);
+		Sorts.bubbleSort(a);
+		Arrays.sort(b);
+		System.out.println(Arrays.equals(a,  b));
+		
+		
+		
+		System.out.println(Arrays.toString(a));
+	}
+
+}

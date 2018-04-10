@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="300.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plannerapp.view.CityController">
+    <stylesheets>
+        <URL value="@forms.css"/>
+    </stylesheets>
+    <children>
+      <Label fx:id="addCityLabel" layoutX="104.0" layoutY="5.0" text="City" />
+      <Label fx:id="cityLabel" layoutX="20.0" layoutY="34.0" text="City:" />
+      <Label fx:id="countryLabel" layoutX="20.0" layoutY="64.0" text="Country:" />
+      <TextField fx:id="CityTextField" layoutX="75.0" layoutY="30.0" />
+      <TextField fx:id="CountryTextField" layoutX="75.0" layoutY="60.0" />
+      <Button fx:id="selectCountryButton" layoutX="225.0" layoutY="60.0" mnemonicParsing="false" onAction="#pickCountry" text="Select Country" /> 
+      <Button fx:id="saveButton" layoutX="75.0" layoutY="90.0" mnemonicParsing="false" onAction="#save" text="Save" /> 
+      <Button fx:id="cancelButton" layoutX="150.0" layoutY="90.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />      
+    </children>
+</AnchorPane>

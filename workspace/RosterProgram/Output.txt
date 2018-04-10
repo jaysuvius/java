@@ -1,0 +1,18 @@
+StudentId 	First Name	Last Name 	Email                         	Age	Grades      
+1         	John      	Smith     	John1989@gmail.com            	 20	88, 79, 59  
+2         	Suzan     	Erickson  	Erickson_1990@gmailcom        	 19	91, 72, 85  
+3         	Jack      	Napoli    	The_lawyer99yahoo.com         	 19	85, 84, 87  
+4         	Erin      	Black     	Erin.black@comcast.net        	 22	91, 98, 82  
+5         	Jeremy    	May       	jmay22@wgu.edu                	 44	100, 90, 78 
+
+Email address for student 2    : Suzan      Erickson   Erickson_1990@gmailcom is invalid
+Email address for student 3    : Jack       Napoli     The_lawyer99yahoo.com is invalid
+
+Grade Point Average for John Smith          : 75.33
+Grade Point Average for Suzan Erickson      : 82.67
+Grade Point Average for Jack Napoli         : 85.33
+Grade Point Average for Erin Black          : 90.33
+Grade Point Average for Jeremy May          : 89.33
+
+Successfully removed student 3
+Student Id: 3 not found

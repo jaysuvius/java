@@ -1,0 +1,37 @@
+package foo;
+
+import java.util.Arrays;
+
+public class ConsoleRunner {
+
+	public static void main(String[] args){
+		//Integer[] a = {19, 16, 15, 14, 14, 12, 11, 10, 13, 16};
+		
+		//Integer[] b = Arrays.copyOf(a, a.length);
+		//Sorts.bubbleSort(a);
+		//Sorts.selectionSort(a, 0, a.length - 1);
+		//Sorts.insertionSort(a, 0, a.length - 1);
+		//System.out.println(Sorts.binarySearch(a, 12));
+		//Arrays.sort(b);
+		//System.out.println(Arrays.equals(a,  b));
+		//System.out.println(Arrays.toString(a));
+		
+		DoubleLinkedList list = new DoubleLinkedList();
+		
+		
+		for(int node = 1; node <= 10; node += 2){
+			list.addNode(node);
+		}
+		
+		list.insertNode(2);
+		
+		System.out.println(list.toString());
+		
+		//DoubleNode node = list.reverseList();
+		
+		System.out.println(list.toString());
+		
+		
+	}
+
+}

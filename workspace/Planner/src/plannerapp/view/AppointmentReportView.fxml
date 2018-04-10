@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plannerapp.view.AppointmentReportViewController">
+    <stylesheets>
+        <URL value="@forms.css"/>
+    </stylesheets>
+    <children>
+        <Label fx:id="AppointmentReportLabel" layoutX="354.0" layoutY="10.0" text="Appointment" />
+        <TableView fx:id="AppointmentReportTable" layoutX="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+          <columns>
+            <TableColumn fx:id="YearColumn" prefWidth="100.0" text="Year" />
+            <TableColumn fx:id="MonthColumn" prefWidth="100.0" text="Month" />
+            <TableColumn fx:id="CustomerColumn" prefWidth="125.0" text="Customer" />
+            <TableColumn fx:id="TitleColumn" prefWidth="100.0" text="Title" />
+            <TableColumn fx:id="DescriptionColumn" prefWidth="100.0" text="Description" />
+            <TableColumn fx:id="ContactColumn" prefWidth="125.0" text="Contact" />
+            <TableColumn fx:id="UrlColumn" prefWidth="125.0" text="Url" />      
+          </columns>
+        </TableView>
+        <Button fx:id="CloseButton" layoutX="300.0" layoutY="360.0" mnemonicParsing="false" onAction="#close" text="Search" />
+    </children>
+</AnchorPane>

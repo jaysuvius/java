@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package foo;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+
+import org.junit.Test;
+
+/**
+ * @author Desert
+ *
+ */
+public class DriverTest {
+
+	/**
+	 * Test method for {@link foo.Driver#sort(int[])}.
+	 */
+	@Test
+	public void testSort() {
+		//Setup
+		int[] a = {19, 16, 15, 14, 14, 12, 11, 10, 13, 16};
+		int[] b = Arrays.copyOf(a, a.length);
+		Arrays.sort(b);
+		//Act
+		Driver.sort(a);
+		//Assert
+		assertArrayEquals(b, a);	
+	}
+
+}

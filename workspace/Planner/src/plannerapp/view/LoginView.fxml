@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="350.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plannerapp.view.LoginViewController">
+    <stylesheets>
+        <URL value="@forms.css"/>
+    </stylesheets>
+    <children>
+      <Label id="titleLabel" fx:id="loginLabel" layoutX="154.0" layoutY="5.0" text="Login" />
+      <Label fx:id="localeLabel" layoutX="24.0" layoutY="34.0" text="Locale:" />
+      <Label fx:id="userNameLabel" layoutX="24.0" layoutY="64.0" text="User Name:" />
+      <Label fx:id="passwordLabel" layoutX="24.0" layoutY="94.0" text="Password:" />
+      <ComboBox fx:id="LocaleComboBox" layoutX="150.0" layoutY="30.0" onAction="#setLocale"/>
+      <TextField fx:id="UserNameTextField" layoutX="150.0" layoutY="60.0" />
+      <PasswordField fx:id="PasswordField" layoutX="150.0" layoutY="90.0" />
+      <Button fx:id="loginButton" layoutX="150.0" layoutY="120.0" mnemonicParsing="false" onAction="#login" text="Login" />        
+    </children>
+</AnchorPane>

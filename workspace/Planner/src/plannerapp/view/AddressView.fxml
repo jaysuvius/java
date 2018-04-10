@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plannerapp.view.AddressController">
+    <stylesheets>
+        <URL value="@forms.css"/>
+    </stylesheets>
+    <children>
+      <Label fx:id="addAddressLabel" layoutX="154.0" layoutY="5.0" text="Address" />
+      <Label fx:id="addressLabel" layoutX="24.0" layoutY="64.0" text="Address:" />
+      <Label fx:id="address2Label" layoutX="24.0" layoutY="94.0" text="Address2:" />
+      <Label fx:id="cityLabel" layoutX="24.0" layoutY="124.0" text="City:" />
+      <Label fx:id="postalCodeLabel" layoutX="24.0" layoutY="154.0" text="Postal Code:" />
+      <Label fx:id="phoneLabel" layoutX="24.0" layoutY="184.0" text="Phone:" />
+      <TextField fx:id="AddressTextField" layoutX="150.0" layoutY="60.0" />
+      <TextField fx:id="Address2TextField" layoutX="150.0" layoutY="90.0" />
+      <TextField fx:id="CityTextField" layoutX="150.0" layoutY="120.0" />
+      <TextField fx:id="PostalCodeTextField" layoutX="150.0" layoutY="150.0" />
+      <TextField fx:id="PhoneTextField" layoutX="150.0" layoutY="180.0" />
+      <Button fx:id="selectButton" layoutX="300.0" layoutY="120.0" mnemonicParsing="false" onAction="#pickCity" text="Select" />
+      <Button fx:id="saveButton" layoutX="150.0" layoutY="220.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Button fx:id="cancelButton" layoutX="225.0" layoutY="220.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />       
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\r\n\ Method\ main\r\n\r\n\ @param\ args\ A\ parameter\r\n
+comment1.params=studentId
+comment1.target=void\ print(java.lang.String)
+comment2.params=studentId\ firstname\ lastname\ emailaddress\ age\ grade1\ grade2\ grade3
+comment2.target=void\ add(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ int)
+comment2.text=\r\n\ Method\ add\ will\ add\ a\ student\ to\ the\ student\ list\ object\r\n\r\n\ @param\ studentId\ Student\ Id\ parameter\r\n\ @param\ firstname\ First\ Name\ parameter\r\n\ @param\ lastname\ Last\ Name\ parameter\r\n\ @param\ emailaddress\ Email\ Address\ parameter\r\n\ @param\ age\ Age\ parameter\r\n\ @param\ grade1\ Grade\ 1\ parameter\r\n\ @param\ grade2\ Grade\ 2\ parameter\r\n\ @param\ grade3\ Grade\ 3\ parameter\r\n
+comment3.params=studentId
+comment3.target=void\ remove(java.lang.String)
+comment3.text=\r\n\ Method\ remove\ will\ remove\ a\ student\ from\ the\ roster\ list\ by\ their\ Id\r\n\r\n\ @param\ studentId\ Student\ Id\ for\ the\ student\ to\ be\ remove\r\n
+comment4.params=
+comment4.target=void\ print_all()
+comment4.text=\r\n\ Method\ print_all\r\n\ This\ method\ will\ print\ all\ the\ students\ and\ their\ grades\ in\ tab\ delimited\ format\r\n
+comment5.params=studentId
+comment5.target=void\ print_average_grade(java.lang.String)
+comment5.text=\r\n\ Method\ print_average_grade\ will\ print\ the\ average\ grade\ for\ each\ student\ in\ the\ roster\r\n\r\n\ @param\ studentId\ Id\ of\ student\ whos\ grades\ to\ average\r\n
+comment6.params=
+comment6.target=void\ print_invalid_emails()
+comment6.text=\r\n\ Method\ print_invalid_emails\ will\ print\ all\ of\ the\ invalid\ email\ addresses\ in\ the\ roster\ list\r\n\r\n
+numComments=7

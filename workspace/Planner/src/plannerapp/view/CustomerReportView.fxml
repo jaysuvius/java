@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plannerapp.view.CustomerReportViewController">
+    <stylesheets>
+        <URL value="@forms.css"/>
+    </stylesheets>
+    <children>
+        <Label fx:id="CustomerReportLabel" layoutX="254.0" layoutY="2.0" text="Customer" />
+        <TableView fx:id="CustomerReportTable" layoutX="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+          <columns>
+            <TableColumn fx:id="NameColumn" prefWidth="100.0" text="Year" />
+            <TableColumn fx:id="ActiveColumn" prefWidth="100.0" text="Month" />
+            <TableColumn fx:id="AddressColumn" prefWidth="125.0" text="Customer" />
+            <TableColumn fx:id="Address2Column" prefWidth="100.0" text="Title" />
+            <TableColumn fx:id="CityColumn" prefWidth="100.0" text="Description" />
+            <TableColumn fx:id="PostalCodeColumn" prefWidth="125.0" text="Contact" />
+            <TableColumn fx:id="PhoneColumn" prefWidth="125.0" text="Url" />      
+          </columns>
+        </TableView>
+        <Button fx:id="closeButton" layoutX="250.0" layoutY="375.0" mnemonicParsing="false" onAction="#close" text="Close" /> 
+    </children>
+</AnchorPane>

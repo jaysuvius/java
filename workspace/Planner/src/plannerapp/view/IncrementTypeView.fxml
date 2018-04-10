@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plannerapp.view.IncrementTypeController">
+    <stylesheets>
+        <URL value="@forms.css"/>
+    </stylesheets>
+     <children>
+      <Label layoutX="154.0" layoutY="5.0" text="Increment Type" />
+      <Label layoutX="24.0" layoutY="34.0" text="Increment Type:" />
+      <TextField fx:id="CountryTextField" layoutX="150.0" layoutY="30.0" />
+      <Button layoutX="300.0" layoutY="120.0" mnemonicParsing="false" onAction="#save" text="Save" />  
+      <Button layoutX="300.0" layoutY="120.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />  
+    </children>
+</AnchorPane>

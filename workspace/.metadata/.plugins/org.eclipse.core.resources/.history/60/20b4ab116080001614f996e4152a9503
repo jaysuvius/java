@@ -1,0 +1,133 @@
+package foo;
+
+import java.util.Stack;
+
+public class DoubleLinkedList {
+
+	DoubleNode root;
+	
+	public DoubleLinkedList(){
+		
+	}
+	
+	DoubleNode addNode(int data){
+		
+		DoubleNode newNode = new DoubleNode(data);
+		
+		if (root == null){
+			root = newNode;
+			return root;
+		}
+		
+		DoubleNode current = root;
+		
+		while(current != null){
+			if(current.next == null){
+				current.next = newNode;
+				newNode.prev = current;
+				return root;
+			}
+			current = current.next;
+		}
+		
+		return root;
+		
+	}
+	
+	public DoubleNode insertNode(int data){
+		
+		DoubleNode newNode = new DoubleNode(data);
+		DoubleNode current = root;
+		DoubleNode previous;
+		
+		if (root == null){
+			root = newNode;
+		}
+		
+		if (newNode.data < root.data){
+			newNode.next = root;
+			root = newNode;
+		}
+		
+		while(current.next != null){
+			previous = current;
+			current = current.next;
+			
+			if (newNode.data >= previous.data && newNode.data < current.data){
+				previous.next = newNode;
+				newNode.prev = previous;
+				newNode.next = current;
+				current.prev = newNode;
+			}	
+		}
+		
+		if (newNode.data > current.data){
+			current.next = newNode;
+			newNode.prev = current;
+		}
+		
+		return root;
+		
+	}
+	
+	public DoubleNode reverseList(){
+		
+		
+		DoubleNode focusNode = root;
+		DoubleNode tmp = new DoubleNode();
+		
+		while (focusNode != null){
+			tmp.next = focusNode.prev;
+			tmp.prev = focusNode.next;
+			focusNode = tmp;
+			focusNode = focusNode.prev;
+		}
+		
+		
+		return root;
+		
+	}
+	
+	
+	public String toString(){
+		
+		String rtnVal = "";
+		
+		DoubleNode current = root;
+		
+		while (current != null){
+			rtnVal = rtnVal + current.data + ":";
+			current = current.next;
+		}
+		
+		return rtnVal;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+class DoubleNode {
+	Integer data;
+	DoubleNode next;
+	DoubleNode prev;
+	
+	DoubleNode(){
+		
+	}
+	
+	DoubleNode(int d){
+		data = d;
+	}
+	
+	public String toString(){
+		return data.toString();
+	}
+		
+}
+

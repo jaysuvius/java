@@ -1,0 +1,45 @@
+package foo;
+
+public class Sorts {
+	
+	public static <T extends Comparable<? super T>> void bubbleSort(T[] list){
+		 for(int i = list.length - 1; i > 1; i--){
+            
+            // The inner loop starts at the beginning of 
+            // the array and compares each value next to each 
+            // other. If the value is greater then they are 
+            // swapped
+            
+            for(int j = 0; j < i; j++){
+                
+                // To change sort to Descending change to <
+                
+                if(list[j].compareTo(list[j+1]) > 0){
+                    
+                    swap(list, j, j+1);
+                    
+                    //printHorzArray(i, j);
+                    
+                }
+                
+            }
+            
+        }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	private static <T extends Comparable<? super T>> void swap(T[] list, int x, int y){
+		T temp = 0;
+		temp = list[x];
+		list[x] = list[y];
+		list[y] = temp;
+	}
+}

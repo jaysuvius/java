@@ -1,0 +1,25 @@
+package foo;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+
+import org.junit.Test;
+
+public class PracticeTests {
+
+	/**
+	 * Test method for {@link foo.Driver#sort(int[])}.
+	 */
+	@Test
+	public void testSort() {
+		//Setup
+		int[] a = {19, 16, 15, 14, 14, 12, 11, 10, 13, 16};
+		int[] b = Arrays.copyOf(a, a.length);
+		Arrays.sort(b);
+		//Act
+		Sorts.bubbleSort(a);
+		//Assert
+		assertArrayEquals(b, a);	
+	}
+}
